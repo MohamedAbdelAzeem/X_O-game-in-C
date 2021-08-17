@@ -2,7 +2,7 @@
  * check_winner.c
  *
  *  Created on: Aug 17, 2021
- *      Author: ZAMALA
+ *      Author: Mohamed AbdelAzeem
  */
 
 
