@@ -2,7 +2,7 @@
  * main.c
  *
  *  Created on: Aug 17, 2021
- *      Author: ZAMALA
+ *      Author: Mohamed AbdelAzeem
  */
 
 #include <stdio.h>
