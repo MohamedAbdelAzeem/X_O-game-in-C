@@ -2,7 +2,7 @@
  * check_winner.h
  *
  *  Created on: Aug 17, 2021
- *      Author: ZAMALA
+ *      Author: Mohamed AbdelAzeem
  */
 
 #ifndef CHECK_WINNER_H_
