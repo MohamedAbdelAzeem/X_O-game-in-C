@@ -16,13 +16,13 @@
 
 /**************************** Global Variables *********************************/
 
-	char Start_End ;
-	unsigned int current_player = 1;
-	unsigned int current_position  = 0;
-	unsigned int full_matrix = 0;
-    unsigned int positons_played[10] = {0};
-	int winner = -1  ;
-	char players_symbols[] = {0, 'X', 'O'};
+char Start_End ;
+unsigned int current_player = 1;
+unsigned int current_position  = 0;
+unsigned int full_matrix = 0;
+unsigned int positons_played[10] = {0};
+int winner = -1  ;
+char players_symbols[] = {0, 'X', 'O'};
 /**********************************************************************************/
 
 
