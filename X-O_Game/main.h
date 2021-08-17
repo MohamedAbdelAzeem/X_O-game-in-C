@@ -2,7 +2,7 @@
  * main.h
  *
  *  Created on: Aug 17, 2021
- *      Author: ZAMALA
+ *      Author: Mohamed AbdelAzeem
  */
 
 #ifndef MAIN_H_
