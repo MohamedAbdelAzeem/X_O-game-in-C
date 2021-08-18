@@ -2,7 +2,7 @@
  * main.c
  *
  *  Created on: Aug 17, 2021
- *      Author: Mohamed AbdelAzeem
+ *      Author: ZAMALA
  */
 
 #include <stdio.h>
@@ -16,13 +16,13 @@
 
 /**************************** Global Variables *********************************/
 
-char Start_End ;
-unsigned int current_player = 1;
-unsigned int current_position  = 0;
-unsigned int full_matrix = 0;
-unsigned int positons_played[10] = {0};
-int winner = -1  ;
-char players_symbols[] = {0, 'X', 'O'};
+	char Start_End ;
+	unsigned int current_player = 1;
+	unsigned int current_position  = 0;
+	unsigned int full_matrix = 0;
+    unsigned int positons_played[10] = {0};
+	int winner = -1  ;
+	char players_symbols[] = {0, 'X', 'O'};
 /**********************************************************************************/
 
 
@@ -106,6 +106,7 @@ void player_move(char player)
 	//Take input from player
 	current_player = player;
 	unsigned char full_flag = 1 ;
+	int invalid = 0;
 	printf("Enter Position Player %d : \n", player);
 	do
 	{
@@ -131,6 +132,7 @@ void player_move(char player)
 			{
 				//position is not taken before
 				positons_played[current_position] = player;
+				invalid = 0;
 			}
 			else
 			{
@@ -138,6 +140,7 @@ void player_move(char player)
 				//if the matrix is not full
 				if(check_matrix_full() == 0)
 				{
+					invalid = 1;
 					printf("Invalid Position, Please choose another one. \n");
 				}
 				else
@@ -156,7 +159,7 @@ void player_move(char player)
 			full_matrix = full_flag ;
 		}
 
-	}while(current_position < 1 || current_position > 9 );
+	}while(current_position < 1 || current_position > 9 || invalid ==1 );
 }
 
 void print_matrix()
